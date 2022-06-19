@@ -17,7 +17,9 @@ public class Person {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        if(email.length() > 5 && email.contains("@")) {
+            this.email = email;
+        }
     }
 
     public String getEmail() {
@@ -25,7 +27,9 @@ public class Person {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        if(phone.length() > 8) {
+            this.phone = phone;
+        }
     }
 
     public String getPhone() {
