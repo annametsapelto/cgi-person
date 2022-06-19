@@ -3,7 +3,11 @@ public class Address {
     private String zipCode;
     private String city;
 
-    public Address(String streetAddress, String zipCode, String city) {}
+    public Address(String streetAddress, String zipCode, String city) {
+        setStreetAddress(streetAddress);
+        setZipCode(zipCode);
+        setCity(city);
+    }
     public void setStreetAddress(String street) {
         if(street.length > 5) {
             this.streetAddress = street;
@@ -14,7 +18,7 @@ public class Address {
         return streetAddress;
     }
 
-    public void zipCode(String zip) {
+    public void setZipCode(String zip) {
         if(zip.length === 5) {
             this.zipCode = zip;
         }
@@ -31,5 +35,8 @@ public class Address {
 
     public String getCity() {
         return city;
+    }
+    public String toString() {
+        return getStreetAddress() + ", " + getZipCode() + " " + getCity();
     }
 }
