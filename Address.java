@@ -9,7 +9,7 @@ public class Address {
         setCity(city);
     }
     public void setStreetAddress(String street) {
-        if(street.length > 5) {
+        if(street.length() > 5) {
             this.streetAddress = street;
         }
     }
@@ -19,7 +19,7 @@ public class Address {
     }
 
     public void setZipCode(String zip) {
-        if(zip.length === 5) {
+        if(zip.length() === 5) {
             this.zipCode = zip;
         }
     }
@@ -28,7 +28,7 @@ public class Address {
         return zipCode;
     }
     public void setCity(String city) {
-        if(city.length > 5) {
+        if(city.length() > 5) {
             this.city = city;
         }
     }
@@ -36,6 +36,7 @@ public class Address {
     public String getCity() {
         return city;
     }
+
     public String toString() {
         return getStreetAddress() + ", " + getZipCode() + " " + getCity();
     }

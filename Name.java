@@ -8,7 +8,7 @@ public class Name {
     }
 
     public void setFirstName(String first) {
-        if(first.length > 1) {        
+        if(first.length() > 1) {        
             this.firstName = first;
         }
     }
@@ -18,7 +18,7 @@ public class Name {
     }
 
     public void setLastName(String last) {
-        if(last.length > 1) {
+        if(last.length() > 1) {
             this.lastName = last;
         }
     }
