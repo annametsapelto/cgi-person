@@ -28,6 +28,7 @@ public class BirthDay {
     public int getMonth() {
         return month;
     }
+
     public void setYear(int year) {
         if(year > 1900 && year <= 2022) {
             this.year = year;

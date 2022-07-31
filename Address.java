@@ -19,7 +19,7 @@ public class Address {
     }
 
     public void setZipCode(String zip) {
-        if(zip.length() === 5) {
+        if(zip.length() == 5) {
             this.zipCode = zip;
         }
     }

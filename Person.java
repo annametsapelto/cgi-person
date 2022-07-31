@@ -8,6 +8,30 @@ public class Person {
 
     public Person(Name name, String id, Address address, String email, String phone, BirthDay birthday) {}
 
+    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public BirthDay getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(BirthDay birthday) {
+        this.birthday = birthday;
+    }
+
     public void setId(String id) {
         this.id = id;
     }
